@@ -1,0 +1,271 @@
+.shrink-body{
+    width:80%;
+    margin-left: auto;
+    margin-right:auto;
+    
+    
+}
+
+.grow-up-section{
+    display: flex;
+    align-items: center;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grow-up-section section img{
+    max-width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+}
+
+.grow-up-section section p{
+    color: #808285;
+}
+
+
+
+
+
+.goal-section{
+    background-color: #f8f9fd;
+    display: flex;
+    justify-content:stretch;
+    color: #202d3e;
+    border-radius: 50px;
+    box-shadow:  20px 20px 60px #d3d4d7,
+             -20px -20px 60px #ffffff;
+}
+.goal-section h1{
+    font-family: -webkit-pictograph;
+}
+.goal-section p{
+  font-family: monospace;
+}
+.goal-section ul{
+    list-style: none;
+}
+.goal-section ul li:before{
+    content: '✓ ';
+    color: #0fb3f0;
+}
+.goal-section ul li{
+    font-family: monospace;
+}
+.goal-section-image img{
+    position: relative;
+    max-width: 70%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.goal-section section{
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.our-member-section{
+    color: #202d3e;
+    /*
+    background-image: url("/Images/elucid.gif");
+    background-repeat: repeat-x;
+    background-blend-mode: lighten;
+    background-size: auto;*/
+}
+.our-member-section h1{
+    font-family: -webkit-pictograph;
+    text-align: center;
+    
+}
+.our-member-section-profiles{
+    display: flex;
+    justify-content: space-between;
+}
+.our-member-section-profiles div img{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #666666,
+             -20px -20px 60px #ffffff;
+}
+
+.our-member-section-profiles div p{
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    word-spacing: 0.8px;
+    color: #140D3F;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: capitalize;
+}
+
+.our-member-section-profiles div p:nth-child(3){
+    text-align:center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0px;
+    word-spacing: 0.8px;
+    color: #2CC1FF;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+.hiring-section{
+    display: flex;
+    align-items: center;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.hiring-section img{
+    max-width: 100%;
+    height: auto;
+    left: 50%;
+    top: 50%;
+}
+
+.hiring-section section h1{
+    font-family: Georgia, serif;
+    font-size: 31px;
+    letter-spacing: 1.4px;
+    word-spacing: 2.4px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+}
+
+.hiring-section section p{
+    color: #808285;
+}
+.apply-now-btn{
+    
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 30px;
+    padding: 0px 15px;
+    text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px;
+    background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+    transition: all 0.5s ease 0s;
+
+    
+}
+
+
+
+
+.about-extended{
+    display: flex;
+}
+.width-fifty{
+    width: 50%;
+}
+.width-thirty{
+    width:30%;
+}
+.about-extended-left{
+    background-image: url("/Images/studying.png");
+    color:#f8f9fd;
+    border-radius: 32px;
+    box-shadow:  35px 35px 70px #5a5a5a,
+             -35px -35px 70px #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.top-banner-flex{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 50px;
+background: #ffffff;
+box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+
+}
+
+
+.nav-content-margin{
+    margin-top: auto;
+    margin-bottom: auto;
+	text-transform: uppercase;
+
+	font-family: cursive;
+}
+
+

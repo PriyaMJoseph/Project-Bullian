@@ -1,0 +1,142 @@
+.black-text {
+    color: black
+}
+
+ul {
+    font-size: 15px;
+    list-style-type: none;
+    padding: 10px;
+}
+
+li {
+    margin: 10px;
+}
+
+li p {
+    margin: 0px;
+    line-height: 23px;
+}
+
+p.faq {
+    background-color: #eaf1fc;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+p.faq.active,
+p.faq.hover {
+    background-color: #cad4e4;
+}
+
+p.faq:after {
+    content: '\2795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+p.faq.active:after {
+    content: '\2796';
+}
+
+#faq_header {
+    background-color: #e3e3e3;
+    height: 200px;
+    display: block;
+}
+
+p.ans {
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+}
+
+.ans.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+#faq_img {
+    float: right;
+}
+
+#faq_header h1 {
+    padding-top: 3%;
+    padding-left: 8%;
+    margin: 0%
+}
+
+#faq_header h4 {
+    padding-left: 8%;
+}
+
+.grey_text {
+    color: #a2a4a6;
+}
+
+button {
+    height: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #006bff;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1.5;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input {
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 30px;
+    width: 88%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #eaf1fc;
+}
+
+.search_faq {
+    padding: 0px !important;
+}
+
+@media screen and (max-width: 767px) {
+    ul {
+        padding: 10px;
+    }
+    button {
+        margin-right: 2%;
+    }
+    .input {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #form {
+        margin-left: 8%;
+    }
+    #faq_header h4 {
+        padding-left: 8%;
+        font-size: 8px;
+    }
+    #faq_img {
+        float: right;
+        height: 100px;
+        width: 208px;
+    }
+    #faq_header h1 {
+        padding-top: 7%;
+        padding-left: 8%;
+        margin: 0%;
+        font-size: 17px;
+        line-height: 16px;
+    }
+    #faq_header {
+        background-color: #e3e3e3;
+        height: 100px;
+        display: block;
+    }
+}

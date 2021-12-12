@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/authentication.css"/>
+    <link rel="stylesheet" href="../common/styles/common.css"/>
+    <title>Bullian - coaching made easy</title>
+    <script src="./js/authentication.js"></script>
+</head>
+<body>
+    <!-- Header/Nav starts here -->
+    <header class="main-header">
+        <div class="container">
+            <div class="mh-logo">
+                <img src="../common/images/bullian.png" width="200" class="header-img" alt="Flexbox.ninja">
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a href="../home/home.html" class = "li-myButton">Home</a></li>
+                    <li><a href="#" class = "li-myButton">About us</a></li>
+                    <li><a href="#" class = "li-myButton">Our clients</a></li>
+                    <li> <a href="#" class = "li-myButton">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="../authentication/authentication.html" class = "main-button button-blue anchor-style">Sign Up/ Login</a>
+        </div>
+    </header>   
+    <!-- Header/Nav ends here -->
+    <main class="main-body">
+        <section class="main-container width-100 mtop-8" id="login-status"></section>
+        <section class="main-container display-flex vert-flex-center space-apart mob-flex-dir-col-rev  mbtm-8 sign-in-container" id="log-in">
+            <div class="width-50 mob-width-100 pad-3 right-border">
+                <h1>Need an account?</h1>
+                <p class="mbtm-8">Bullian is a hybrid online learning platform where students can choose to learn with an instructor of their choice face to face or they can choose from a plethora of do-at-your-pace courses</p>
+                <button class="main-button button-blue anchor-style pad-2" onclick=showSignUp()>Sign up</button>
+            </div>
+            <div class="width-50 mob-width-100 pad-3 mob-border-bot">
+                <h1>Account log in</h1>
+                <form method="POST" action="">
+                    <div>
+                        <label for="username" class="input-form-label mbtm-3">Username</label>
+                        <br/>
+                        <input type="text" name="username" class="input-form-field width-100 mbtm-5" id="signin-user" required/>
+                    </div>
+                    <div>
+                        <label for="password" class="input-form-label mbtm-3">Password</label>
+                        <br/>
+                        <input type="password" name="password" class="input-form-field width-100 mbtm-8" id="signin-passwd" required/>
+                    </div>
+                    <div>
+                        <button type="submit" class="main-button button-palm pad-2" onclick=signIn(event)>Log in</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="main-container display-flex vert-flex-center space-apart mob-flex-dir-col mbtm-8 sign-in-container hide-section" id="sign-up">
+            <div class="width-50 mob-width-100 pad-3 mob-border-bot">
+                <h1>Create an account</h1>
+                <form method="POST" action="">
+                    <div>
+                        <label for="email" class="input-form-label mbtm-3">Email</label>
+                        <br/>
+                        <input type="email" name="email" class="input-form-field width-100 mbtm-5" id="signup-user" required/>
+                    </div>
+                    <div>
+                        <label for="password" class="input-form-label mbtm-3">Password</label>
+                        <br/>
+                        <input type="password" name="password" class="input-form-field width-100 mbtm-8" id="signup-passwd" required/>
+                    </div>
+                    <div>
+                        <label for="confirm-password" class="input-form-label mbtm-3">Confirm Password</label>
+                        <br/>
+                        <input type="password" name="confirm-password" class="input-form-field width-100 mbtm-8" id="signup-conf-passwd" required/>
+                    </div>
+                    <div>
+                        <button type="submit" class="main-button button-palm pad-2" onclick=signUp(event)>Sign up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="width-50 mob-width-100 pad-3 left-border">
+                <h1>Already have an account?</h1>
+                <p class="mbtm-8">Bullian is a hybrid online learning platform where students can choose to learn with an instructor of their choice face to face or they can choose from a plethora of do-at-your-pace courses</p>
+                <button class="main-button button-blue anchor-style pad-2" onclick=showLogin()>Log in</button>
+            </div>
+        </section>
+    </main>
+    <!-- Footer goes here -->
+    <footer>
+        <section class="footer mob-sec-pad ">
+            <div class="main-container display-flex space-apart footer-container mob-flex-dir-col mob-align-center mob-sec-pad">
+                <div class="width-40 mob-width-100 ">
+                    <p class="footer_heading">ABOUT</p>
+                    <p> Bull-ian is a startup who wants to help students outside schools/college, who needs special attention on specific subjects to attain custom tailored goals.
+                    </p>
+                </div>
+                <div class="width-25 mob-width-100 ">
+                    <p class="footer_heading">SOCIAL MEDIA</p>
+                    <img class="social_media" src="../common/images/instagram_logo.png" alt="instagram" />
+                    <img class="social_media" src="../common/images/twitter_logo.png" alt="twitter" />
+                    <img class="social_media" src="../common/images/fb_logo.png" alt="facebook" />
+                    <img class="social_media" src="../common/images/youtube_logo.png" alt="youtube" />
+                </div>
+                <div class="width-15 mob-width-100 ">
+                    <p class="footer_heading">SUBJECTS</p>
+                    <div class="footer_content">
+                        <p class="margin-0">Math
+                            <br>Science
+                            <br>English
+                            <br>AP
+                        </p>
+                    </div>
+                </div>
+                <div class="width-15 mob-width-100 ">
+                    <p class="footer_heading">LEARN MORE</p>
+                    <div class="footer_content">
+                        <ul>
+                            <li><a href="../faq/faq.html">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="align-center copyright-section">
+            <p class="white-text margin-0 pad-1">© 2021 Copyright : Bullian Inc.</p>
+        </section>
+    </footer>
+</body>
+</html> 

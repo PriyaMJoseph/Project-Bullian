@@ -1,0 +1,134 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+  }
+.box-content{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    box-shadow: 1px -3px 31px 0px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 1px -3px 31px 0px rgba(0,0,0,0.66);
+    -moz-box-shadow: 1px -3px 31px 0px rgba(0,0,0,0.66);
+}
+
+
+
+.main-section{
+    display: flex;
+    height: 100%;
+    background-color: white;
+}
+
+
+.width-fifty{
+    width: 50%;
+    
+}
+
+
+
+
+
+
+
+.section-banner img{
+    width: 100%;
+    height: -webkit-fill-available;
+}
+.width-ninety{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.display-flex-contact-us-segment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.width-ninety h1{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 36px;
+    letter-spacing: 0.8px;
+    word-spacing: 1px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-bottom: auto;
+}
+
+.minimal-para {
+    color: #c1c1c1;
+    margin-top: auto;
+}
+
+.display-flex-reach-us-segment{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.our-details-top{
+    color: #d4d4d4;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+
+.our-details-bottom{
+   
+    margin-top: 0px;
+}
+
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #b7b7b7;
+  }
+  input:focus {
+    border-color: #969696;
+  }
+  .form-flex{
+      margin-bottom: 10%;
+  }
+
+
+  .mr-0 {
+    margin-right: 0;
+  }
+  .ml-auto {
+    margin-left:auto;
+  }
+  .d-block {
+    display:block;
+  }
+  .btn {
+    font-family: Arial;
+    color: #292429;
+    
+    padding: 0.6em 3em 0.6em 3em;
+    font-weight: 700;
+    border: solid #676f73 4px;
+    text-decoration: none;
+  }
+  
+
+
+  form{
+    font-family: cursive;
+    color: 676f73 ;
+  }
+  .input-data{
+    width: 100%;
+} 
+.input-data-message{
+    width: 100%;
+    line-height: 7em;
+}

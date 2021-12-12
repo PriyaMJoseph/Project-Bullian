@@ -1,0 +1,27 @@
+.sign-in-container{
+    box-shadow: 0px 0px 10px #cfcfcf;
+}
+.right-border{
+    border-right: 1px solid darkgray;
+}
+.left-border{
+    border-left: 1px solid darkgray;
+}
+.hide-section{
+    display: none !important;
+}
+@media screen and (max-width: 767px){
+    .sign-in-container{
+        box-shadow: none;
+        margin: 5% !important;
+    }
+    .right-border{
+        border-right: none;
+    }
+    .left-border{
+        border-left: none;
+    }
+    .mob-border-bot{
+        border-bottom: 1px solid darkgray;
+    }
+}

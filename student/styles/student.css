@@ -1,0 +1,89 @@
+h1 {
+    margin: 0px;
+}
+
+.blue_background {
+    background-color: #4883b9;
+}
+
+#student_header {
+    height: 50px;
+}
+
+.card {
+    width: 25%;
+    background-color: whitesmoke;
+}
+
+.dashboard_card {
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+}
+
+.student_dash_row {
+    display: flex;
+    flex: 1 1;
+}
+
+.student_dash_col {
+    flex: 0 0 496px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 12px;
+}
+
+.text_white {
+    color: white;
+}
+
+.dash_header {
+    padding-top: 3px;
+    padding-left: 15px;
+}
+
+.img_height {
+    height: 275px;
+}
+
+.img_width {
+    width: 496px;
+}
+
+
+/* Styling tabs */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    padding-left: 50px;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 19px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tablinks {
+    font-weight: bold;
+    color: blue;
+}
+
+.hide {
+    display: none;
+}

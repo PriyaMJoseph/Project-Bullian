@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Bullian - coaching made easy</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/styles/common.css" />
+    <link rel="stylesheet" href="styles/student.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/studentDashboad.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="mh-logo">
+                <img src="../common/images/bullian.png" width="200" class="header-img" alt="Flexbox.ninja">
+            </div>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li><a href="../home/home.html" class="li-myButton">Home</a></li>
+                    <li><a href="../about/about.html" class="li-myButton">About us</a></li>
+                    <li><a href="../products/products.html" class="li-myButton">Products</a></li>
+                    <li><a href="../learning/learning.html" class="li-myButton">Sample learning</a></li>
+                    <li> <a href="../faq/faq.html" class="li-myButton">FAQs</a></li>
+                    <li> <a href="../contact/contact.html" class="li-myButton">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="../authentication/authentication.html" class="main-button button-blue anchor-style">Sign Up/ Login</a>
+        </div>
+        <div class="width-100 mob-width-100 blue_background" id="student_header">
+            <h1 class="text_white dash_header">My Dashboard</h1>
+        </div>
+
+    </header>
+    <main class="student_dashboard">
+        <div class="tab">
+            <button class="tablinks active" onclick="showCourses(event, 'progress')">In-progress</button>
+            <button class="tablinks" onclick="showCourses(event, 'completed')">Completed</button>
+            <button class="tablinks" onclick="showCourses(event, 'recommended')">Recommended</button>
+        </div>
+        <section class="mob-sec-pad">
+            <div class="main-container">
+                <!--courses in progress -->
+                <div class="dashboard_card">
+                    <div class="student_dash_row" id="in-progress">
+                        <div class="card student_dash_col progress">
+                            <img src="images/calculus.jpg" alt="Calculus" class="img_width img_height">
+                            <div class="container">
+                                <p><strong>Chapter 12:</strong> The Chain Rule</p>
+                                <p><b>Tutor :</b> <i>Tina Thomas</i></p>
+                                <button type="Resume" class="width-40 main-button button-palm">Resume</button>
+                                <button type="End" class="width-40 main-button button-palm">End Course</button>
+                            </div>
+                        </div>
+                        <div class="card student_dash_col progress">
+                            <img src="images/Trigonometry.jpg" alt="Trigonometry" class="img_width img_height">
+                            <div class="container">
+                                <p><strong>Chapter  9:</strong> The Pythagorean Theorem</p>
+                                <p><b>Tutor :</b> <i>Sean Kinred</i></p>
+                                <button type="Resume" class="width-40 main-button button-palm">Resume</button>
+                                <button type="End" class="width-40 main-button button-palm">End Course</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student_dash_row">
+                        <div class="card student_dash_col progress">
+                            <img src="images/geology.jpg" alt="Geology" class="img_width img_height">
+                            <div class="container">
+                                <p><strong>Chapter 10:</strong> Plate Tectonics</p>
+                                <p><b>Tutor :</b> <i>Rebecca Paul</i></p>
+                                <button type="Resume" class="width-40 main-button button-palm">Resume</button>
+                                <button type="End" class="width-40 main-button button-palm">End Course</button>
+                            </div>
+                        </div>
+                        <div class="card student_dash_col progress">
+                            <img src="images/APPhysics.jpeg" alt="AP Pysics" class="img_width img_height">
+                            <div class="container">
+                                <p><strong>Chapter 4:</strong> Fundamentals of Laser</p>
+                                <p><b>Tutor :</b> <i>Peter Newman</i></p>
+                                <button type="Resume" class="width-40 main-button button-palm">Resume</button>
+                                <button type="End" class="width-40 main-button button-palm">End Course</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="student_dash_row">
+                        <div class="card student_dash_col progress">
+                            <img src="images/Botany.jpg" alt="Botony" class="img_width img_height">
+                            <div class="container">
+                                <p><strong>Chapter 6:</strong> Morphology of Flowering Plants</p>
+                                <p><b>Tutor :</b> <i>Jane Jackson</i></p>
+                                <button type="Resume" class="width-40 main-button button-palm">Resume</button>
+                                <button type="End" class="width-40 main-button button-palm">End Course</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--completed courses-->
+                <div class="dashboard_card">
+                    <div class="student_dash_row" id="completed">
+                        <div class="card student_dash_col completed">
+                            <img src="images/french.jpg" alt="French" class="img_width img_height">
+                            <div class="container">
+                                <button type="Restart" class="width-40 main-button button-palm">Learn Again</button>
+                            </div>
+                        </div>
+                        <div class="card student_dash_col completed">
+                            <img src="images/IT.jpg" alt="Information Technology" class="img_width img_height">
+                            <div class="container">
+                                <button type="Restart" class="width-40 main-button button-palm">Learn Again</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--recommended courses-->
+                <div class="dashboard_card">
+                    <div class="student_dash_row" id="recommended">
+                        <div class="card student_dash_col recommended">
+                            <img src="images/history.jpg" alt="History" class="img_width img_height">
+                            <div class="container">
+                                <button type="Start" class="width-40 main-button button-palm">Start</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer mob-sec-pad">
+            <div class="main-container display-flex space-apart footer-container mob-flex-dir-col mob-align-center mob-sec-pad">
+                <div class="width-40 mob-width-100">
+                    <p class="footer_heading">ABOUT</p>
+                    <p> Bull-ian is a startup who wants to help students outside schools/college, who needs special attention on specific subjects to attain custom tailored goals.
+                    </p>
+                </div>
+                <div class="width-25 mob-width-100">
+                    <p class="footer_heading">SOCIAL MEDIA</p>
+                    <img class="social_media" src="../common/images/instagram_logo.png" alt="instagram" />
+                    <img class="social_media" src="../common/images/twitter_logo.png" alt="twitter" />
+                    <img class="social_media" src="../common/images/fb_logo.png" alt="facebook" />
+                    <img class="social_media" src="../common/images/youtube_logo.png" alt="youtube" />
+                </div>
+                <div class="width-15 mob-width-100">
+                    <p class="footer_heading">SUBJECTS</p>
+                    <div class="footer_content">
+                        <p class="margin-0">Math
+                            <br>Science
+                            <br>English
+                            <br>AP
+                        </p>
+                    </div>
+                </div>
+                <div class="width-15 mob-width-100">
+                    <p class="footer_heading">LEARN MORE</p>
+                    <div class="footer_content">
+                        <ul>
+                            <li><a href="../faq/faq.html">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="align-center copyright-section">
+            <p class="white-text margin-0 pad-1">© 2021 Copyright : Bullian Inc.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
